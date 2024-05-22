@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+
+    <title>RaymonDev</title>
+
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="src/css/refreshbutton.css">
+    <link rel="stylesheet" href="src/css/socials.css">
+    <link rel="stylesheet" href="src/css/toast.css">
+
+    <link rel="stylesheet" href="src/css/astronaut.css">
+    <link rel="stylesheet" href="src/css/line-loader.css">
+
+    <link rel="stylesheet" href="src/css/divAspect.css">
+    <link rel="stylesheet" href="src/css/cards.css">
+    <link rel="stylesheet" href="src/css/closeButton.css">
+    <link rel="stylesheet" href="src/css/showbutton.css">
+
+    <link rel="icon"  href="media/icon/ico/favicon-lightmodeB.ico" media="(prefers-color-scheme: light)">
+    <link rel="icon"  href="media/icon/ico/favicon-darkmodeB.ico" media="(prefers-color-scheme: dark)">
+
+
+</head>
+<body>
+
+
+  <div class="loading-screen">
+    <div data-js="astro" class="astronaut">
+      <div class="head"></div>
+      <div class="arm arm-left"></div>
+      <div class="arm arm-right"></div>
+      <div class="body">
+        <div class="panel"></div>
+      </div>
+      <div class="leg leg-left"></div>
+      <div class="leg leg-right"></div>
+      <div class="schoolbag"></div>
+    </div>
+
+    <div>
+      <div class="line-wobble"></div>
+    </div>
+
+    <a class="tip-text">Try pressing letters, numbers and arrows in your keyboard :) </a>
+  </div>
+
+
+
+
+
+
+
+
+    <div id="toast">
+
+      <div id="img">
+        <a id="notikey"></a>
+      </div>
+
+      <div id="desc">
+        <a id=notitext></a>
+      </div>
+
+    </div>
+
+
+
+    <div id="header-div" class="header-div">
+        <h1 class="mainName">RaymonDev</h1>
+        <p class="subName">Telecommunication systems engineering student</h2>
+        <p class="subName">Software developer</h2>
+        
+    </div>
+
+
+    <button id="dropdown-button" class="showButton">
+      <svg class="svgIcon" viewBox="0 0 384 512">
+        <path
+          d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z"
+        ></path>
+      </svg>
+    </button>
+
+
+    <div id="socials" class="socials">
+
+        <ul class="example-2">
+            <li class="icon-content">
+              <a
+                href="https://www.linkedin.com/in/ramon-gallinad-corti-463468262/"
+                aria-label="LinkedIn"
+                data-social="linkedin"
+              >
+                <div class="filled"></div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-linkedin"
+                  viewBox="0 0 16 16"
+                  xml:space="preserve"
+                >
+                  <path
+                    d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"
+                    fill="currentColor"
+                  ></path>
+                </svg>
+              </a>
+            </li>
+            <li class="icon-content">
+              <a href="https://github.com/RaymonDev" aria-label="GitHub" data-social="github">
+                <div class="filled"></div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-github"
+                  viewBox="0 0 16 16"
+                  xml:space="preserve"
+                >
+                  <path
+                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"
+                    fill="currentColor"
+                  ></path>
+                </svg>
+              </a>
+            </li>
+            <li class="icon-content">
+              <a
+                href="mailto:ramon.gallinad@autonoma.cat"
+                aria-label="Instagram"
+                data-social="instagram"
+              >
+                <div class="filled"></div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-instagram"
+                  viewBox="0 0 16 16"
+                  xml:space="preserve"
+                >
+                  <path
+                    d="M0 2h16v12h-16zm1.5 1.5v9h13v-9zM0 2l8 6 8-6v2l-8 6-8-6z"
+                    fill="currentColor"
+                  ></path>
+                </svg>
+              </a>
+            </li>
+          </ul>
+          
+    
+    </div>
+
+
+
+    <div id="bottomright-menu" class="main-container">
+
+      <div class="toggle-switch">
+          <label class="lowtext" for="toggle">Low</label>
+          <!-- <input class="switch" type="checkbox" id="toggle" checked /> -->
+          <input class="switch" type="checkbox" id="toggle" checked/>
+          <label class="hightext" for="toggle">High</label>
+      </div>
+      
+
+      <div class="button-div">
+          <button type="button" class="button" id="refresh">
+              <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-arrow-repeat"
+                  viewBox="0 0 16 16">
+                  
+                  <path
+                  d="M11.534 7h3.932a.25.25 0 0 1 .192.41l-1.966 2.36a.25.25 0 0 1-.384 0l-1.966-2.36a.25.25 0 0 1 .192-.41zm-11 2h3.932a.25.25 0 0 0 .192-.41L2.692 6.23a.25.25 0 0 0-.384 0L.342 8.59A.25.25 0 0 0 .534 9z"
+                  ></path>
+                  <path
+                  fill-rule="evenodd"
+                  d="M8 3c-1.552 0-2.94.707-3.857 1.818a.5.5 0 1 1-.771-.636A6.002 6.002 0 0 1 13.917 7H12.9A5.002 5.002 0 0 0 8 3zM3.1 9a5.002 5.002 0 0 0 8.757 2.182.5.5 0 1 1 .771.636A6.002 6.002 0 0 1 2.083 9H3.1z"
+                  ></path>
+              </svg></button>
+          
+      </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <div id="info-container" class="hidden">
+        
+
+      <div class="about-me">
+          <h2 class="title-text">About me</h2>
+          <div class="text-paragraphs">
+          <p>I'm Ramon Gallinad, a Telecommunications Engineering student in Barcelona. 
+              Despite my relatively short professional journey, my dedication and ambition have propelled me to delve 
+              into various fields. From coding since the age of eight to mastering languages like Python, Java, R, C, 
+              HTML, CSS, and JavaScript, I've embarked on numerous personal projects, spanning AI to data science.</p>
+          
+          <p>My thirst for knowledge led me to explore intriguing subjects, 
+              resulting in published research papers on Cherenkov radiation and quantum key distribution protocols. 
+              Recently, I've expanded my horizons by becoming a Microsoft Student Ambassador, eager to 
+              contribute to the tech community.</p>
+  
+          <p>Beyond technical expertise, I pride myself on strong social skills, including effective communication and relationship building. 
+              Whether collaborating with diverse teams or engaging with individuals from different backgrounds, I've excelled in 
+              fostering connections and driving collective success. My goal is to continue making meaningful contributions while 
+              helping my team achieve its objectives.</p>
+      </div>
+
+      <div class="experiences">
+          <h2 class="title-text">Experiences</h2>
+          <div class="text-paragraphs">
+          <p>As a Microsoft Student Ambassador, I had the privilege of representing my 
+              university within the vibrant tech community. Through this role, I honed my leadership, communication, and event planning skills while
+               also deepening my understanding of Microsoft's tools and technologies.</p>
+          
+          <p>My journey into the realm of telecommunications research began with my paper on 
+              exploring the spectrum of Cherenkov radiation in water, followed by my work on the G24 quantum 
+              key distribution protocol. These experiences allowed me to delve into cutting-edge topics at the 
+              intersection of physics and telecommunications, applying mathematical principles to solve complex 
+              problems. Collaborating with peers and mentors, I gained invaluable insights into the research process,
+               from conceptualization to publication.</p>
+  
+          <p>From a young age, I've been captivated by the art of coding and its potential 
+              to bring ideas to life. I've undertaken numerous software development projects, 
+              ranging from web applications to mobile apps. One notable project involved building 
+              an interactive educational platform to teach coding to children in underserved communities. 
+              Through these endeavors, I've refined my programming skills, learned to work effectively in
+               teams, and discovered the power of technology to drive positive change in society.</p>
+      </div>
+
+
+      <div class="projects">
+          <h2 class="project-title">Projects</h2>
+
+          
+          <div class="container">
+
+
+              <div class="box">
+                  <span class="title">Signal Recovery</span>
+                  <div>
+                    <strong>Python</strong>
+                    <p>Square signal recovery</p>
+                    <span>Github</span> <span>4/24</span>
+                  </div>
+              </div>
+
+
+
+              <div class="box">
+                <span class="title">Snippet Vault</span>
+                <div>
+                  <strong>Multiple languages</strong>
+                  <p>collection of code snippets</p>
+                  <span>Github</span> <span>7/23</span>
+                </div>
+              </div>
+              
+              
+              <div class="box">
+                <span class="title">RUSGen</span>
+                <div>
+                  <strong>Python</strong>
+                  <p>AI redditor summarizer</p>
+                  <span>Github</span> <span>06/23</span>
+                </div>
+              </div>
+
+
+              <div class="box">
+                  <span class="title">Cherenkov Radiation Spectrum</span>
+                  <div>
+                    <strong>Python</strong>
+                    <p>Cherenkov radiation spectrum in water</p>
+                    <span>Github</span> <span>04/23</span>
+                  </div>
+              </div>
+          
+          </div>
+            
+      </div>
+
+      <div class="credits">
+        <a>Made with ❤️ by RaymonDev | </a>
+        <a style="margin-left: 5px;">Satelite models: <a href="https://sketchfab.com/djalalxjay">djalalxjay</a> | </a>
+        <a style="margin-left: 5px;">Earth Textures: <a href="https://www.solarsystemscope.com/textures/">Solar System Scope</a> </a>
+      </div>
+      
+            
+            
+            
+              
+      <button class="hiddeButton" id="hide-button">
+          <span class="X"></span>
+          <span class="Y"></span>
+        </button>
+  
+  
+    </div>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/build/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/examples/js/controls/OrbitControls.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+    <script src="https://unpkg.com/three@0.132.2/examples/js/loaders/GLTFLoader.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+
+
+
+    <script type="module" src="index.js"></script>
+</body>
+</html>

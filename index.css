@@ -1,0 +1,177 @@
+
+
+
+
+
+body {
+    margin: 0;
+    overflow: hidden;
+}
+canvas { display: block; }
+
+
+.loading-screen{
+  background: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 99999;
+}
+
+
+
+
+
+.header-div{
+  position: fixed;
+  top: 1px;
+  left: 50px;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Modified */
+  justify-content: center;
+}
+
+.mainName{
+    color: white;
+    margin-top: 20px;
+    margin-left: 1px;
+    margin-bottom: 15px;
+    font-size: 63px;
+    font-family: Georgia, serif;
+    font-weight: bold;
+}
+.subName{
+  color: white;
+  margin-top: 1px;
+  margin-left: 1px; /* Added */
+  font-size: 15px;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-style: italic;
+  /*font-weight: bold;*/
+}
+
+
+.socials{
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* Added */
+  /*transform: scale(0.7);*/
+}
+
+
+
+
+
+.main-container {
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lowtext{
+    color: white;
+    margin-right: 7px;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.hightext{
+    color: white;
+    margin-left: 7px;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+
+.toggle-switch{
+  padding-right: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.switch {
+    position: relative;
+    height: 1.5rem;
+    width: 3rem;
+    cursor: pointer;
+    appearance: none;
+    -webkit-appearance: none;
+    border-radius: 9999px;
+    background-color: rgba(100, 116, 139, 0.377);
+    transition: all .3s ease;
+    
+  }
+  
+  .switch:checked {
+    background-color: rgba(3, 73, 108,255);
+  }
+  
+  .switch::before {
+    position: absolute;
+    content: "";
+    left: calc(1.5rem - 1.6rem);
+    top: calc(1.5rem - 1.6rem);
+    display: block;
+    height: 1.6rem;
+    width: 1.6rem;
+    cursor: pointer;
+    border: 1px solid rgba(100, 116, 139, 0.527);
+    border-radius: 9999px;
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 0 3px 10px rgba(100, 116, 139, 0.327);
+    transition: all .3s ease;
+  }
+  
+  .switch:hover::before {
+    box-shadow: 0 0 0px 8px rgba(0, 0, 0, .15)
+  }
+  
+  .switch:checked:hover::before {
+    box-shadow: 0 0 0px 8px rgba(3, 73, 108, 0.168)
+  }
+  
+  .switch:checked:before {
+    transform: translateX(100%);
+    border-color: rgba(3, 73, 108,255);
+  }
+
+
+
+
+
+.dot {
+  position: absolute;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.dot:nth-child(odd) {  /* Select every other dot (odd index) */
+  box-shadow: 0 0 3px 1px rgba(255, 255, 255, 0.3); /* Reduce the glow */
+  animation: glow 2s infinite ease-in-out; /* Add this line */
+}
+
+/* Add this block */
+@keyframes glow {
+  0%, 100% {
+    box-shadow: 0 0 3px 1px rgba(255, 255, 255, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 6px 2px rgba(255, 255, 255, 0.6);
+  }
+}

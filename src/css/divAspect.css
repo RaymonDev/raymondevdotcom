@@ -1,0 +1,93 @@
+/* Hide the info container initially */
+.hidden {
+    display: none;
+}
+
+
+/* Style the info container */
+#info-container {
+    background-color: #000000;
+    z-index: 999999;
+    position: absolute;
+    bottom: 0; /* Display at the bottom */
+    left: 0;
+    right: auto;
+    top: 0; /* Add this line */
+    margin: auto;
+    width: 100%; /* Change this line */
+    height: 100%; /* Add this line */
+    text-align: left; /* Change this line to align text to the left */
+    animation: slide-up 0.5s ease-in-out; /* Add slide-up animation */
+    overflow-x: hidden;
+}
+
+/* Define the slide-up animation */
+@keyframes slide-up {
+    from {
+        transform: translateY(100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+/* Define the slide-down animation */
+@keyframes slide-down {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(250%);
+    }
+}
+
+.title-text {
+    color: white;
+    font-family: Georgia, serif;
+    margin-top: 245px;
+    margin-left: auto; /* Change this line to auto */
+    margin-right: auto; /* Add this line */
+    font-size: 54px;
+    max-width: 800px; /* Add this line to limit the title width */
+    text-align: left; /* Add this line to align text to the left */
+}
+
+.project-title {
+    color: white;
+    font-family: Georgia, serif;
+    margin-top: 245px;
+    margin-left: 42.5%;
+    font-size: 54px; 
+}
+
+.text-paragraphs {
+    padding-top: 1px;
+    color: white;
+    left: 0; /* Change this line to 0 */
+    right: auto; /* Add this line */
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    max-width: 800px; /* Add this line to limit the paragraph width */
+    margin: 0 auto; /* Add this line to center the paragraph */
+    text-align: left; /* Add this line to align text to the left */
+}
+
+.about-me{
+    background-color: #000000;
+}
+
+.experiences{
+    background-color: #000000;
+}
+
+
+.credits {
+    color: white;
+    font-family: 'Courier New', monospace;
+    font-style: italic;
+    
+    margin-top: 235px;
+    margin-left: 27%;
+    margin-bottom: 20px;
+    margin-right: auto;
+    text-align: left;
+}
